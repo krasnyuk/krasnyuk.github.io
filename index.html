@@ -24,12 +24,16 @@
     <!-- Theme CSS -->
     <link href="css/agency.css" rel="stylesheet">
 
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 
 </head>
 
@@ -97,7 +101,7 @@
                     <h3 class="section-subheading text-muted">Мы используем только лучшие компонеты для наших жидкостей</h3>
                 </div>
             </div>
-            <div class="row text-center">
+            <div id="services-animate" class="row text-center animated">
                 <div class="col-md-3 col-sm-6">
                     <img class=" img-responsive" src="img/materials/nicotine.jpg">
                     <h4 class="service-heading">Никотин</h4>
@@ -131,7 +135,7 @@
                     <h3 class="section-subheading text-muted">Тут вы можете подробно ознакомится с нашими жидкостями</h3>
                 </div>
             </div>
-            <div class="row">
+            <div id="portfolio-animated" class="row animated">
                 <div class="col-md-3 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -209,7 +213,7 @@
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
                             </div>
-                            <div class="timeline-panel">
+                            <div id="timeline-animated-first" class="timeline-panel animated">
                                 <div class="timeline-heading">
                                     <h4>Вкусы наших жидкостей</h4>
                                 </div>
@@ -222,7 +226,7 @@
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
                             </div>
-                            <div class="timeline-panel">
+                            <div id="timeline-animated-second" class="timeline-panel animated">
                                 <div class="timeline-heading">
                                     <h4>Качество</h4>
                                 </div>
@@ -235,7 +239,7 @@
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
                             </div>
-                            <div class="timeline-panel">
+                            <div id="timeline-animated-third" class="timeline-panel animated">
                                 <div class="timeline-heading">
                                     <h4>Удобство и цена</h4>
                                 </div>
@@ -248,7 +252,7 @@
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
                             </div>
-                            <div class="timeline-panel">
+                            <div id="timeline-animated-fourth" class="timeline-panel animated">
                                 <div class="timeline-heading">
                                     <h4>Стремительный рост</h4>
                                 </div>
@@ -567,6 +571,43 @@
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
 
+    <!--Scroll lib-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            const offset = '80%';
+
+            $('#services-animate').css('opacity', 0);
+            $('#services-animate').waypoint(function() {
+                $('#services-animate').addClass('fadeInUp');
+            }, { offset: offset });
+
+            $('#portfolio-animated').css('opacity', 0);
+            $('#portfolio-animated').waypoint(function() {
+                $('#portfolio-animated').addClass('fadeInUp');
+            }, { offset: offset });
+
+            $('#timeline-animated-first').css('opacity', 0);
+            $('#timeline-animated-first').waypoint(function() {
+                $('#timeline-animated-first').addClass('fadeInLeft');
+            }, { offset: offset });
+
+            $('#timeline-animated-second').css('opacity', 0);
+            $('#timeline-animated-second').waypoint(function() {
+                $('#timeline-animated-second').addClass('fadeInRight');
+            }, { offset: offset });
+
+            $('#timeline-animated-third').css('opacity', 0);
+            $('#timeline-animated-third').waypoint(function() {
+                $('#timeline-animated-third').addClass('fadeInLeft');
+            }, { offset: offset });
+
+            $('#timeline-animated-fourth').css('opacity', 0);
+            $('#timeline-animated-fourth').waypoint(function() {
+                $('#timeline-animated-fourth').addClass('fadeInRight');
+            }, { offset: offset });
+        });
+    </script>
     <!--VK API-->
     <script src="https://vk.com/js/api/openapi.js?137" type="text/javascript"></script>
 
