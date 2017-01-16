@@ -213,6 +213,9 @@ header .intro-text .intro-heading {
     margin-bottom: 50px;
   }
 }
+section#about h2.section-heading {
+  margin-bottom: 100px;
+}
 section {
   padding: 100px 0;
 }
