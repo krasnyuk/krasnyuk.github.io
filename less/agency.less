@@ -2,6 +2,19 @@
 @import "mixins.less";
 
 // Global Components
+.parallax {
+    /* The image used */
+    background-image: url("../img/header2.jpg");
+
+    /* Set a specific height */
+    height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 body {
     overflow-x: hidden;
@@ -64,16 +77,16 @@ h1, h2, h3, h4, h5, h6 {
 // Restyled Primary Buttons
 
 .btn-primary {
-    border: 1px solid @theme-primary;
-    color: @theme-primary;
+    border: 1px solid @gray-darker;
+    color: @gray-darker;
     background-color: transparent;
     .heading-font;
     font-weight: 700;
     border-radius: 0;
-    &:hover, &:focus, &:active {
+    &:hover, &:active {
         color: white;
-        background-color: @theme-primary;
-        border-color: @theme-primary;
+        background-color: @gray-darker;
+        border-color: @gray-darker;
     }
 }
 
@@ -85,10 +98,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     font-size: 18px;
     padding: 20px 40px;
-}
-.btn-xl:hover {
-    background-color: darken(@theme-primary, 10%);
-    color: white;
+    &:hover, &:visited {
+        background-color: darken(@theme-primary, 10%);
+        color: white;
+    }
 }
 
 // Custom Navigation Bar
@@ -182,9 +195,12 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     background-image: url('../img/header2.jpg');
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
+    background-size: cover;
+
     .background-cover;
     text-align: center;
     color: white;
@@ -192,15 +208,14 @@ header {
         padding-top: 100px;
         padding-bottom: 50px;
         .intro-lead-in {
-            .serif-font;
-            font-style: italic;
+            font-family: 'Lobster', cursive;
             font-size: 22px;
             line-height: 22px;
             margin-bottom: 25px;
         }
         .intro-heading {
-            .heading-font;
-            font-weight: 700;
+            font-family: 'Lobster', cursive;
+            font-weight: 500;
             font-size: 50px;
             line-height: 50px;
             margin-bottom: 25px;
@@ -214,15 +229,14 @@ header {
             padding-top: 300px;
             padding-bottom: 200px;
             .intro-lead-in {
-                .serif-font;
-                font-style: italic;
+                font-family: 'Lobster', cursive;
                 font-size: 40px;
                 line-height: 40px;
                 margin-bottom: 25px;
             }
             .intro-heading {
-                .heading-font;
-                font-weight: 700;
+                font-family: 'Lobster', cursive;
+                font-weight: 500;
                 font-size: 75px;
                 line-height: 75px;
                 margin-bottom: 50px;
@@ -556,6 +570,9 @@ section {
 // Clients Aside
 
 aside.clients {
+    h2.section-heading {
+        margin-top: 50px;
+    }
     img {
         margin: 50px auto;
         opacity: 0.7;
@@ -568,10 +585,12 @@ aside.clients {
 // Contact Section
 
 section#contact {
-    background-color: @gray-darker;
     background-image: url('../img/header2.jpg');
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 
     .contact-item{
         color: white;
@@ -789,4 +808,114 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @theme-primary;
+}
+
+/*
+
+    Carousel
+
+ */
+
+#quote-carousel
+{
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+    background: none;
+    color: @theme-primary;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left
+{
+    left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right
+{
+    right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators
+{
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li
+{
+    background: @gray-lighter;
+}
+#quote-carousel .carousel-indicators .active
+{
+    background: #333333;
+}
+#quote-carousel img
+{
+    width: 250px;
+    height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+.carousel-text {
+    color: @gray-lighter;
+}
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #quote-carousel
+    {
+        margin-bottom: 0;
+        padding: 0 40px 30px 40px;
+    }
+
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
 }

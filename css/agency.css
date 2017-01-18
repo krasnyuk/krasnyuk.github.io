@@ -1,4 +1,15 @@
 /*@theme-primary: #10e673;*/
+.parallax {
+  /* The image used */
+  background-image: url("../img/header2.jpg");
+  /* Set a specific height */
+  height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -7,7 +18,7 @@ body {
   color: #777777;
 }
 .text-primary {
-  color: #1cff1f;
+  color: #00ff85;
 }
 p {
   font-size: 14px;
@@ -24,13 +35,13 @@ a.active {
   outline: none;
 }
 a {
-  color: #1cff1f;
+  color: #00ff85;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #00e803;
+  color: #00cc6a;
 }
 h1,
 h2,
@@ -52,8 +63,8 @@ h6 {
   background-color: #222222;
 }
 .btn-primary {
-  border: 1px solid #1cff1f;
-  color: #1cff1f;
+  border: 1px solid #222222;
+  color: #222222;
   background-color: transparent;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -61,24 +72,24 @@ h6 {
   border-radius: 0;
 }
 .btn-primary:hover,
-.btn-primary:focus,
 .btn-primary:active {
   color: white;
-  background-color: #1cff1f;
-  border-color: #1cff1f;
+  background-color: #222222;
+  border-color: #222222;
 }
 .btn-xl {
   background-color: transparent;
-  color: #1cff1f;
-  border: 2px solid #00e803;
+  color: #00ff85;
+  border: 2px solid #00cc6a;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
   padding: 20px 40px;
 }
-.btn-xl:hover {
-  background-color: #00e803;
+.btn-xl:hover,
+.btn-xl:visited {
+  background-color: #00cc6a;
   color: white;
 }
 .navbar-custom {
@@ -86,21 +97,21 @@ h6 {
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: #1cff1f;
+  color: #00ff85;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #00e803;
+  color: #00cc6a;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-  background-color: #1cff1f;
-  border-color: #1cff1f;
+  background-color: #00ff85;
+  border-color: #00ff85;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
@@ -108,7 +119,7 @@ h6 {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #1cff1f;
+  background-color: #00ff85;
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -119,14 +130,14 @@ h6 {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #1cff1f;
+  color: #00ff85;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
   background-color: transparent;
-  border: 2px solid #1cff1f;
+  border: 2px solid #00ff85;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
@@ -163,9 +174,10 @@ h6 {
 }
 header {
   background-image: url('../img/header2.jpg');
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -178,16 +190,14 @@ header .intro-text {
   padding-bottom: 50px;
 }
 header .intro-text .intro-lead-in {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
+  font-family: 'Lobster', cursive;
   font-size: 22px;
   line-height: 22px;
   margin-bottom: 25px;
 }
 header .intro-text .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'Lobster', cursive;
+  font-weight: 500;
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 25px;
@@ -198,16 +208,14 @@ header .intro-text .intro-heading {
     padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
+    font-family: 'Lobster', cursive;
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 25px;
   }
   header .intro-text .intro-heading {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
+    font-family: 'Lobster', cursive;
+    font-weight: 500;
     font-size: 75px;
     line-height: 75px;
     margin-bottom: 50px;
@@ -215,6 +223,7 @@ header .intro-text .intro-heading {
 }
 section#about h2.section-heading {
   margin-bottom: 100px;
+  margin-top: -50px;
 }
 section {
   padding: 100px 0;
@@ -252,7 +261,7 @@ section h3.section-subheading {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: rgba(28, 255, 31, 0.9);
+  background: rgba(0, 255, 133, 0.9);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -361,7 +370,7 @@ section h3.section-subheading {
   height: 80px;
   position: absolute;
   z-index: 100;
-  background-color: #1cff1f;
+  background-color: #00ff85;
   color: white;
   border-radius: 100%;
   border: 7px solid #f1f1f1;
@@ -371,7 +380,7 @@ section h3.section-subheading {
 .timeline > li .timeline-image a:visited,
 .timeline > li .timeline-image a:hover {
   text-decoration: none;
-  color: #001c00;
+  color: #000000;
 }
 .timeline > li .timeline-image h4 {
   font-size: 10px;
@@ -499,6 +508,9 @@ section h3.section-subheading {
 .team-member p {
   margin-top: 0;
 }
+aside.clients h2.section-heading {
+  margin-top: 50px;
+}
 aside.clients img {
   margin: 50px auto;
   opacity: 0.7;
@@ -507,10 +519,12 @@ aside.clients img:hover {
   opacity: 1;
 }
 section#contact {
-  background-color: #222222;
   background-image: url('../img/header2.jpg');
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 section#contact .contact-item {
   color: white;
@@ -536,7 +550,7 @@ section#contact .form-group textarea.form-control {
   height: 236px;
 }
 section#contact .form-control:focus {
-  border-color: #1cff1f;
+  border-color: #00ff85;
   box-shadow: none;
 }
 section#contact ::-webkit-input-placeholder {
@@ -570,13 +584,13 @@ section#contact .text-danger {
 }
 section#contact .telephones {
   color: white;
-  border: 1px solid #1cff1f;
+  border: 1px solid #00ff85;
   padding: 20px;
   border-radius: 3px;
   margin-bottom: 30px;
 }
 section#contact .telephones .number {
-  color: #1cff1f;
+  color: #00ff85;
   font-size: 1.3em;
 }
 footer {
@@ -616,7 +630,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #1cff1f;
+  background-color: #00ff85;
 }
 .btn:focus,
 .btn:active,
@@ -700,11 +714,11 @@ ul.social-buttons li a:active {
 }
 ::-moz-selection {
   text-shadow: none;
-  background: #1cff1f;
+  background: #00ff85;
 }
 ::selection {
   text-shadow: none;
-  background: #1cff1f;
+  background: #00ff85;
 }
 img::selection {
   background: transparent;
@@ -713,5 +727,93 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #1cff1f;
+  webkit-tap-highlight-color: #00ff85;
+}
+/*
+
+    Carousel
+
+ */
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+/* Control buttons  */
+#quote-carousel .carousel-control {
+  background: none;
+  color: #00ff85;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left {
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right {
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li {
+  background: #eeeeee;
+}
+#quote-carousel .carousel-indicators .active {
+  background: #333333;
+}
+#quote-carousel img {
+  width: 250px;
+  height: 100px;
+}
+/* End carousel */
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+.item blockquote img {
+  margin-bottom: 10px;
+}
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+}
+.carousel-text {
+  color: #eeeeee;
+}
+/**
+  MEDIA QUERIES
+*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #quote-carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+  }
+}
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+  /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+  #quote-carousel .carousel-indicators {
+    bottom: -20px !important;
+  }
+  #quote-carousel .carousel-indicators li {
+    display: inline-block;
+    margin: 0px 5px;
+    width: 15px;
+    height: 15px;
+  }
+  #quote-carousel .carousel-indicators li.active {
+    margin: 0px 5px;
+    width: 20px;
+    height: 20px;
+  }
 }
