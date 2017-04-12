@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="713bfa34-063b-4bef-b3a7-9ffc078e77df" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="vape-vault.iws" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="690" column="56" selection-start-line="690" selection-start-column="56" selection-end-line="690" selection-end-column="56" />
+            <state relative-caret-position="289">
+              <caret line="394" column="68" selection-start-line="394" selection-start-column="68" selection-end-line="394" selection-end-column="68" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -334,12 +333,12 @@
       <workItem from="1488542169838" duration="1892000" />
       <workItem from="1488551263273" duration="61000" />
       <workItem from="1488809310142" duration="640000" />
-      <workItem from="1491994790822" duration="2606000" />
+      <workItem from="1491994790822" duration="2838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33582000" />
+    <option name="totallyTimeSpent" value="33814000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="0" />
@@ -919,8 +918,8 @@
     <entry file="file://$PROJECT_DIR$/img/liquid-photos/all.jpg" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="690" column="56" selection-start-line="690" selection-start-column="56" selection-end-line="690" selection-end-column="56" />
+        <state relative-caret-position="289">
+          <caret line="394" column="68" selection-start-line="394" selection-start-column="68" selection-end-line="394" selection-end-column="68" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
