@@ -173,7 +173,7 @@ h6 {
   }
 }
 header {
-  background-image: url('../img/header2.jpg');
+  background-image: url('../img/1-15.jpg');
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -527,7 +527,7 @@ aside.clients img {
   margin: 50px auto;
 }
 section#contact {
-  background-image: url('../img/header2.jpg');
+  background-image: url('../img/60ml-dark.jpg');
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
