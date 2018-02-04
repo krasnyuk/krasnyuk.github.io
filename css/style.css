@@ -1534,3 +1534,9 @@ h6 {
   max-height: 400px;
   margin: 0 auto;
 }
+.download {
+  text-align: center;
+}
+.download .download-button {
+  padding: 10px 20px;
+}
